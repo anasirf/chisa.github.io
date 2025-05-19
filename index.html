@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+  </nav>
+  <div class="container">
+    <h1 class="title">For You</h1>
+    <div id="poem" class="poem"></div>
+  </div>
+  <footer class="footer">— Chisa</footer>
+  <script>
+    const poemLines = [
+      "Some light cannot be captured in frames,",
+      "like the way you bloom when you paint the silence.",
+      "I’ve watched from where the winds pause,",
+      "and saw how your world colored mine, quietly.",
+      "",
+      "I said nothing.",
+      "Because timing is a fragile thing—",
+      "But I traced every echo your joy left behind.",
+      "",
+      "Tomorrow, the world will cheer your name,",
+      "and I will too, from this hidden corner.",
+      "With nothing but a smile, and this poem—",
+      "to say: you’ve been beautiful to me.",
+      "",
+      "— I Like You."
+    ];
+
+    const poemContainer = document.getElementById("poem");
+    let lineIndex = 0;
+
+    function paintLine() {
+      if (lineIndex < poemLines.length) {
+        const line = document.createElement("div");
+        line.textContent = poemLines[lineIndex];
+        poemContainer.appendChild(line);
+        lineIndex++;
+        setTimeout(paintLine, 1200);
+      }
+    }
+    paintLine();
+  </script>
+</body>
+</html>
