@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fcefe3;
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.navbar {
+  width: 100%;
+  background: #fff0e6;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.navbar a {
+  color: #a66a4c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 700px;
+  padding: 40px;
+  background: #fff5ec;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.title {
+  text-align: center;
+  color: #a66a4c;
+  margin-bottom: 30px;
+}
+
+.poem, .about-text {
+  font-size: 1.2rem;
+  color: #5a3e36;
+  white-space: pre-line;
+  line-height: 1.8;
+}
+
+.footer {
+  margin: 30px auto 10px;
+  font-size: 0.9rem;
+  color: #aa7c5c;
+  text-align: center;
+}
